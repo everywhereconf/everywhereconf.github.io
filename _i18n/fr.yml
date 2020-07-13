@@ -1,3 +1,6 @@
+global:
+  english: EN
+  french: FR
 title:
   start: La conférence
   red: multiplateforme

@@ -1,3 +1,6 @@
+global:
+  english: EN
+  french: FR
 title:
   start: The annual
   red: multiplateform
