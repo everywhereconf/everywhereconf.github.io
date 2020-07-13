@@ -33,10 +33,13 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
 
 languages: ["en", "fr"]
 exclude_from_localizations: ["assets"]
+defaultLang: en
+languageNames:
+  fr: French
+  en: English
 
 # Exclude from processing.
 # The following items will not be processed, by default.
