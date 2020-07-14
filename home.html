@@ -253,49 +253,17 @@ canonical_url: 'https://everywhereconf.github.io/home'
 
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="supporter-logo">
-                        <img src="../assets/img/supporters/1.png" class="img-fluid" alt="">
+                        <img src="../assets/img/supporters/kaibee.png" class="img-fluid" alt="">
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/2.png" class="img-fluid" alt="">
-                    </div>
+                    Lambda Scale
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-xs-6">
                     <div class="supporter-logo">
-                        <img src="../assets/img/supporters/3.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/4.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/5.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/6.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/7.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6">
-                    <div class="supporter-logo">
-                        <img src="../assets/img/supporters/8.png" class="img-fluid" alt="">
+                        <img src="../assets/img/supporters/overlay.png" class="img-fluid" alt="">
                     </div>
                 </div>
 
@@ -403,16 +371,19 @@ canonical_url: 'https://everywhereconf.github.io/home'
         <div class="container" data-aos="zoom-in">
             <div class="section-header">
                 <h2>Newsletter</h2>
-                <p>Rerum numquam illum recusandae quia mollitia consequatur.</p>
+                <p>{% t newsletter.subtitle %}</p>
             </div>
 
             <form method="POST" action="#">
                 <div class="form-row justify-content-center">
                     <div class="col-auto">
-                        <input type="text" class="form-control" placeholder="Enter your Email">
+                        <input type="text" class="form-control" placeholder="{% t newsletter.placeholder-name %}">
                     </div>
                     <div class="col-auto">
-                        <button type="submit">Subscribe</button>
+                        <input type="text" class="form-control" placeholder="{% t newsletter.placeholder %}">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit">{% t newsletter.button %}</button>
                     </div>
                 </div>
             </form>
@@ -425,29 +396,28 @@ canonical_url: 'https://everywhereconf.github.io/home'
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
-                <h2>Buy Tickets</h2>
-                <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+                <h2>{% t buy-tickets.title %}</h2>
             </div>
 
             <div class="row">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 offset-lg-2" data-aos="fade-up" data-aos-delay="100">
                     <div class="card mb-5 mb-lg-0">
                         <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                            <h6 class="card-price text-center">$150</h6>
+                            <h5 class="card-title text-muted text-uppercase text-center">Standard</h5>
+                            <h6 class="card-price text-center">0€</h6>
                             <hr>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.1 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.2 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.3 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.4 %}</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>{% t buy-tickets.items.5 %}</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>{% t buy-tickets.items.6 %}</li>
                             </ul>
                             <hr>
                             <div class="text-center">
                                 <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal"
-                                        data-ticket-type="standard-access">Buy Now
+                                        data-ticket-type="standard-access">{% t buy-tickets.button %}
                                 </button>
                             </div>
                         </div>
@@ -456,48 +426,23 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card mb-5 mb-lg-0">
                         <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
-                            <h6 class="card-price text-center">$250</h6>
+                            <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
+                            <h6 class="card-price text-center">10€</h6>
                             <hr>
                             <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.1 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.2 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.3 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.4 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.5 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.6 %}</li>
                             </ul>
                             <hr>
                             <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">
-                                    Buy Now
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">
+                                    {% t buy-tickets.button %}
                                 </button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pro Tier -->
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
-                            <h6 class="card-price text-center">$350</h6>
-                            <hr>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
-                                <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
-                            </ul>
-                            <hr>
-                            <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal"
-                                        data-ticket-type="premium-access">Buy Now
-                                </button>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -510,7 +455,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Buy Tickets</h4>
+                        <h4 class="modal-title">{% t buy-tickets.title %}</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -518,21 +463,20 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     <div class="modal-body">
                         <form method="POST" action="#">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                                <input type="text" class="form-control" name="your-name" placeholder="{% t buy-tickets.modal.name %}">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                                <input type="text" class="form-control" name="your-email" placeholder="{% t buy-tickets.modal.email %}">
                             </div>
                             <div class="form-group">
                                 <select id="ticket-type" name="ticket-type" class="form-control">
-                                    <option value="">-- Select Your Ticket Type --</option>
-                                    <option value="standard-access">Standard Access</option>
-                                    <option value="pro-access">Pro Access</option>
-                                    <option value="premium-access">Premium Access</option>
+                                    <option value="">-- {% t buy-tickets.modal.option %} --</option>
+                                    <option value="standard-access">Standard</option>
+                                    <option value="premium-access">Premium</option>
                                 </select>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn">Buy Now</button>
+                                <button type="submit" class="btn">{% t buy-tickets.modal.button %}</button>
                             </div>
                         </form>
                     </div>

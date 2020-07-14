@@ -48,3 +48,23 @@ schedule:
   description: Le programme sera annoncé très prochainement.
   newsletter: Je reste informé !
   room: Salle
+newsletter:
+  subtitle: S'abonner aux dernières mises à jour
+  placeholder: Entrer votre Email
+  placeholder-name: Entrer votre Nom Complet
+  button: S'abonner
+buy-tickets:
+  title: Billetterie
+  items:
+    1: Accès à toutes les conférences
+    2: Chat avec les autres participants
+    3: Accès illimité à tous les replays
+    4: Rencontre sponsors en ligne
+    5: Soirée post conférence
+    6: Verre gratuit !
+  button: Choisir
+  modal:
+    name: Votre Name
+    email: Votre Email
+    option: Choisir un type de billet
+    button: Acheter

@@ -48,3 +48,23 @@ schedule:
   description: The schedule will be annouce shortly.
   newsletter: Stay tuned !
   room: Room
+newsletter:
+  subtitle: Subscribe to reveive the latest updates
+  placeholder: Enter your Email
+  placeholder-name: Enter your Full Name
+  button: Subscribe
+buy-tickets:
+  title: Tickets
+  items:
+    1: Access to all conferences
+    2: Chat with other participants
+    3: Unlimited access to replays
+    4: Meet our sponsors
+    5: After conference party
+    6: Free drink !
+  button: Choose
+  modal:
+    name: Your Name
+    email: Your Email
+    option: Select Your Ticket Type
+    button: Buy now
