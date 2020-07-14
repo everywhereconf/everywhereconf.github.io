@@ -1,7 +1,14 @@
 global:
   english: EN
   french: FR
-title:
-  start: La conférence
-  red: multiplateforme
-  end: annuelle
+navbar:
+  home: Accueil
+  about: A propos
+  speakers: Speakers
+  agenda: Programme
+  sponsors: Sponsors
+  faq: FAQ
+  newsletter: Newsletter
+  contact: Contact
+  tickets: Tickets
+  call-for-paper: Call for paper
