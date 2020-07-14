@@ -55,10 +55,10 @@ canonical_url: 'https://everywhereconf.github.io/home'
             <ul class="nav-menu">
                 {% if site.lang == "fr" %}
                 {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
-                <li><a href="{{ link1 }}" >{% t global.english %}</a></li>
+                <li class="language-switch"><a href="{{ link1 }}" >{% t global.english %}</a></li>
                 {% elsif site.lang == "en" %}
                 {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
-                <li><a href="{{ link2 }}" >{% t global.french %}</a></li>
+                <li class="language-switch"><a href="{{ link2 }}" >{% t global.french %}</a></li>
                 {% endif %}
                 <li class="menu-active"><a href="index.html">{% t navbar.home %}</a></li>
                 <li><a href="#about">{% t navbar.about %}</a></li>
@@ -68,7 +68,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <li><a href="#faq">{% t navbar.faq %}</a></li>
                 <li><a href="#contact">{% t navbar.contact %}</a></li>
                 <li class="buy-tickets"><a href="#buy-tickets">{% t navbar.tickets %}</a></li>
-                <li class="call-for-paper"><a href="#buy-tickets">{% t navbar.call-for-paper %}</a></li>
+                <li class="call-for-paper"><a href="#call-for-paper">{% t navbar.call-for-paper %}</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
     </div>
@@ -882,7 +882,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+            &copy; Copyright . All Rights Reserved
         </div>
         <div class="credits">
             <!--
