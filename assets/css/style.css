@@ -162,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled, #header.header-fixed {
   background: rgba(6, 12, 34, 0.98);
-  /*background: rgb(14, 27, 77);*/
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -319,6 +318,54 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2px;
   line-height: 1;
   font-size: 13px;
+}
+
+.about-action .subscribe {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 0px;
+  width: 90%;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #606265;
+}
+
+.about-action .subscribe:hover {
+  background: #86878b;
+  color: #fff;
+}
+
+.about-action .buy-tickets {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 0px;
+  width: 90%;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #2665b3;
+}
+
+.about-action .buy-tickets:hover {
+  background: #2665b3;
+  color: #fff;
 }
 
 .nav-menu li.buy-tickets a:hover {

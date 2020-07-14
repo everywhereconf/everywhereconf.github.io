@@ -55,10 +55,10 @@ canonical_url: 'https://everywhereconf.github.io/home'
             <ul class="nav-menu">
                 {% if site.lang == "fr" %}
                 {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
-                <li class="language-switch"><a href="{{ link1 }}" >{% t global.english %}</a></li>
+                <li class="language-switch"><a href="{{ link1 }}">{% t global.english %}</a></li>
                 {% elsif site.lang == "en" %}
-                {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
-                <li class="language-switch"><a href="{{ link2 }}" >{% t global.french %}</a></li>
+                {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+                <li class="language-switch"><a href="{{ link2 }}">{% t global.french %}</a></li>
                 {% endif %}
                 <li class="menu-active"><a href="index.html">{% t navbar.home %}</a></li>
                 <li><a href="#about">{% t navbar.about %}</a></li>
@@ -81,13 +81,13 @@ canonical_url: 'https://everywhereconf.github.io/home'
         {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
         <h1 class="mb-4 pb-0">La conférence<br><span>multiplateforme</span></h1>
         {% elsif site.lang == "en" %}
-        {% capture link2 %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
         <h1 class="mb-4 pb-0">The <span>multiplateform</span><br>conference</h1>
         {% endif %}
 
-        <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-        <a href="#about" class="about-btn scrollto">About The Event</a>
+        <p class="mb-4 pb-0">{% t intro.date %}</p>
+        <!--        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
+        <a href="#about" class="about-btn scrollto">{% t intro.about %}</a>
     </div>
 </section><!-- End Intro Section -->
 
@@ -97,19 +97,21 @@ canonical_url: 'https://everywhereconf.github.io/home'
     <section id="about">
         <div class="container" data-aos="fade-up">
             <div class="row">
-                <div class="col-lg-6">
-                    <h2>About The Event</h2>
-                    <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-                        accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-                        est ut optio sequi unde.</p>
+                <div class="col-lg-5">
+                    <h2>{% t about.what.title %}</h2>
+                    <p>{% t about.what.description %}</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>{% t about.where.title %}</h2>
+                    <p>{% t about.where.description %}</p>
                 </div>
                 <div class="col-lg-3">
-                    <h3>Where</h3>
-                    <p>Downtown Conference Center, New York</p>
-                </div>
-                <div class="col-lg-3">
-                    <h3>When</h3>
-                    <p>Monday to Wednesday<br>10-12 December</p>
+                    <h2>{% t about.when.title %}</h2>
+                    <p>{% t about.when.description %}</p>
+                    <div class="about-action">
+                        <a href="#subscribe" class="subscribe scrollto">{% t about.when.newsletter %}</a>
+                        <a href="#buy-tickets" class="buy-tickets scrollto">{% t about.when.billet %}</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,94 +128,25 @@ canonical_url: 'https://everywhereconf.github.io/home'
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                        <img src="../assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Brenden Legros</a></h3>
-                            <p>Quas alias incidunt</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
+                        <
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                        <img src="../assets/img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Hubert Hirthe</a></h3>
-                            <p>Consequuntur odio aut</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                        <img src="../assets/img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Cole Emmerich</a></h3>
-                            <p>Fugiat laborum et</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-                        <img src="../assets/img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Jack Christiansen</a></h3>
-                            <p>Debitis iure vero</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="200">
-                        <img src="../assets/img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Alejandrin Littel</a></h3>
-                            <p>Qui molestiae natus</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="speaker" data-aos="fade-up" data-aos-delay="300">
-                        <img src="../assets/img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-                        <div class="details">
-                            <h3><a href="/speakers">Willow Trantow</a></h3>
-                            <p>Non autem dicta</p>
-                            <div class="social">
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-google-plus"></i></a>
-                                <a href=""><i class="fa fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-lg-4 col-md-6">-->
+<!--                    <div class="speaker" data-aos="fade-up" data-aos-delay="100">-->
+<!--                        <img src="../assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">-->
+<!--                        <div class="details">-->
+<!--                            <h3><a href="/speakers">Brenden Legros</a></h3>-->
+<!--                            <p>Quas alias incidunt</p>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="fa fa-twitter"></i></a>-->
+<!--                                <a href=""><i class="fa fa-facebook"></i></a>-->
+<!--                                <a href=""><i class="fa fa-google-plus"></i></a>-->
+<!--                                <a href=""><i class="fa fa-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
             </div>
         </div>
 
@@ -248,7 +181,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>09:30 AM</time></div>
+                        <div class="col-md-2">
+                            <time>09:30 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <h4>Registration</h4>
                             <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
@@ -256,7 +191,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>10:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/1.jpg" alt="Brenden Legros">
@@ -267,7 +204,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>11:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>11:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/2.jpg" alt="Hubert Hirthe">
@@ -278,7 +217,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>12:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>12:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/3.jpg" alt="Cole Emmerich">
@@ -289,7 +230,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>02:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>02:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/4.jpg" alt="Jack Christiansen">
@@ -300,7 +243,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>03:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>03:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/5.jpg" alt="Alejandrin Littel">
@@ -311,7 +256,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>04:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>04:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/6.jpg" alt="Willow Trantow">
@@ -328,7 +275,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>10:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/1.jpg" alt="Brenden Legros">
@@ -339,7 +288,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>11:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>11:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/2.jpg" alt="Hubert Hirthe">
@@ -350,7 +301,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>12:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>12:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/3.jpg" alt="Cole Emmerich">
@@ -361,7 +314,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>02:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>02:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/4.jpg" alt="Jack Christiansen">
@@ -372,7 +327,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>03:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>03:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/5.jpg" alt="Alejandrin Littel">
@@ -383,7 +340,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>04:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>04:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/6.jpg" alt="Willow Trantow">
@@ -400,7 +359,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>10:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>10:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/2.jpg" alt="Hubert Hirthe">
@@ -411,7 +372,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>11:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>11:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/3.jpg" alt="Cole Emmerich">
@@ -422,7 +385,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>12:00 AM</time></div>
+                        <div class="col-md-2">
+                            <time>12:00 AM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/1.jpg" alt="Brenden Legros">
@@ -433,7 +398,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>02:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>02:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/4.jpg" alt="Jack Christiansen">
@@ -444,7 +411,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>03:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>03:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/5.jpg" alt="Alejandrin Littel">
@@ -455,7 +424,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     </div>
 
                     <div class="row schedule-item">
-                        <div class="col-md-2"><time>04:00 PM</time></div>
+                        <div class="col-md-2">
+                            <time>04:00 PM</time>
+                        </div>
                         <div class="col-md-10">
                             <div class="speaker">
                                 <img src="../assets/img/speakers/6.jpg" alt="Willow Trantow">
@@ -552,55 +523,73 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     <ul id="faq-list">
 
                         <li>
-                            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i
+                                    class="fa fa-minus-circle"></i></a>
                             <div id="faq1" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                    Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a
+                                pellentesque? <i class="fa fa-minus-circle"></i></a>
                             <div id="faq2" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+                                    ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi? <i class="fa fa-minus-circle"></i></a>
                             <div id="faq3" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer
+                                    enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis
+                                    convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i
+                                    class="fa fa-minus-circle"></i></a>
                             <div id="faq4" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+                                    ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                                <i class="fa fa-minus-circle"></i></a>
                             <div id="faq5" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus
+                                    commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit
+                                    turpis cursus in
                                 </p>
                             </div>
                         </li>
 
                         <li>
-                            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+                            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+                                turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
                             <div id="faq6" class="collapse" data-parent="#faq-list">
                                 <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel.
+                                    Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus
+                                    vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
+                                    Nibh tellus molestie nunc non blandit massa enim nec.
                                 </p>
                             </div>
                         </li>
@@ -661,7 +650,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                             </ul>
                             <hr>
                             <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal"
+                                        data-ticket-type="standard-access">Buy Now
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -682,7 +673,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                             </ul>
                             <hr>
                             <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="pro-access">
+                                    Buy Now
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -704,7 +697,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                             </ul>
                             <hr>
                             <div class="text-center">
-                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal"
+                                        data-ticket-type="premium-access">Buy Now
+                                </button>
                             </div>
 
                         </div>
@@ -793,20 +788,24 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                                   data-msg="Please enter at least 4 chars"/>
                             <div class="validate"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                                   data-msg="Please enter a valid email"/>
                             <div class="validate"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                               data-msg="Please enter at least 8 chars of subject"/>
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                                  placeholder="Message"></textarea>
                         <div class="validate"></div>
                     </div>
                     <div class="mb-3">
@@ -814,7 +813,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
                         <div class="error-message"></div>
                         <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
-                    <div class="text-center"><button type="submit">Send Message</button></div>
+                    <div class="text-center">
+                        <button type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
 
@@ -831,7 +832,9 @@ canonical_url: 'https://everywhereconf.github.io/home'
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <img src="../assets/img/logo-everywhere.jpg" alt="TheEvenet">
-                    <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                    <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis
+                        fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis
+                        accusamus repellat cumque.</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
