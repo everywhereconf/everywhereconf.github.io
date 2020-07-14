@@ -35,3 +35,16 @@ about:
     newsletter: Je m'abonne
     title: Quand ?
     description: Le 27 Novembre 2020
+speakers:
+  title: Speakers
+  subtitle: Découvrez nos speakers
+  cfp:
+    title: La liste de nos speakers arrive prochainement.
+    description: Si vous souhaitez proposer un sujet, cliquez ci-dessous pour être redérigé vers notre CFP.
+    button: Je propose un sujet
+schedule:
+  title: Programme
+  subtitle: Le programme de la journée de conférence
+  description: Le programme sera annoncé très prochainement.
+  newsletter: Je reste informé !
+  room: Salle

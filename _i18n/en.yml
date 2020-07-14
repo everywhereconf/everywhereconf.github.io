@@ -35,3 +35,16 @@ about:
     newsletter: I subscribe
     title: When ?
     description: The 27th of November, 2020
+speakers:
+  title: Speakers
+  subtitle: Here are our speakers
+  cfp:
+    title: The list of speakers will arrive shortly.
+    description: If you are interested in submiting a subject, click the following button to apply to our CFP.
+    button: I submit a talk
+schedule:
+  title: Schedule
+  subtitle: The schedule for the conference day
+  description: The schedule will be annouce shortly.
+  newsletter: Stay tuned !
+  room: Room

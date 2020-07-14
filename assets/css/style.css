@@ -343,6 +343,32 @@ h1, h2, h3, h4, h5, h6 {
   background: #86878b;
   color: #fff;
 }
+.speaker-action {
+  text-align: center;
+}
+.speaker-action .call-for-paper {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 0px;
+  width: 30%;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: rgba(6, 12, 34, 0.98);
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
+
+.speaker-action .call-for-paper:hover {
+  background: #f82249;
+  color: #fff;
+}
 
 .about-action .buy-tickets {
   font-family: "Raleway", sans-serif;
@@ -365,6 +391,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-action .buy-tickets:hover {
   background: #2665b3;
+  color: #fff;
+}
+.schedule-action {
+  text-align: center;
+}
+
+.schedule-action .subscribe {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 0px;
+  width: 30%;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 50px;
+  color: rgba(6, 12, 34, 0.98);
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #606265;
+}
+
+.schedule-action .subscribe:hover {
+  background: #86878b;
   color: #fff;
 }
 
