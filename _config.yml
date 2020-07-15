@@ -22,9 +22,8 @@ title: Multiplateform Conference
 tagline: Website for Multiplateform Conference
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The multiplateform conference is a international event that aims to gather speakers talking about various
-  technologies that can be used to multiplatform programming. This french and english multiplatform conference is 100 per cent online
-  and can be free.
+  The multiplateform conference is an international event that aims to gather speakers talking about various
+  technologies in any kind of multiplatform programming. This french and english multiplatform conference is online.
 #baseurl: "/home" # the subpath of your site, e.g. /blog
 #url: https://everywhereconf.github.io # the base hostname & protocol for your site, e.g. http://example.com
 logo: https://everywhereconf.github.io/assets/img/logo-everywhere.jpg
