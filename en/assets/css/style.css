@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
-  margin: 50px;
+  margin: 10px;
   color: rgba(6, 12, 34, 0.98);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
@@ -1327,7 +1327,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Subscribe Section
 --------------------------------------------------------------*/
 #subscribe {
-  padding: 60px;
+  padding: 60px 30px;
   background: url(../img/subscribe-bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -1366,11 +1366,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .row input {
-  margin: 10px;
+  margin: 10px 0px;
 }
 #subscribe button {
   width: 150px;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 @media (max-width: 991px) {
@@ -1678,9 +1678,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Raleway", sans-serif;
   color: #fff;
 }
-.social-links {
-  margin-left: 100px;
+
+.top-right {
+  margin-right: 60px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-top: 15px;
 }
+
 .social-links a {
   font-size: 18px;
   display: inline-block;
