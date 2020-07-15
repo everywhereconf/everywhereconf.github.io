@@ -68,3 +68,29 @@ buy-tickets:
     email: Your Email
     option: Select Your Ticket Type
     button: Buy now
+contact:
+  title: Contact us
+  placeholder:
+    name: Full Name
+    email: Email
+    subject: Subject
+    message: Message
+    button: Send message
+  validation:
+    name: Please enter your full name
+    email: Please enter a valid email
+    subject: Please give us a subject to discuss
+    message: Please give us your message
+    chargement: Loading...
+    sent: Message sent. Thank you !
+footer:
+  1:
+    title: Information
+    legals: Legal notices
+    code: Code of conduct
+    association: The association
+  2:
+    title: Useful links
+    flutter-meetup: Paris Flutter
+    meetup-paris-kotlin: Paris Kotlin
+    meetup-nantes-kotlin: Nantes Kotlin

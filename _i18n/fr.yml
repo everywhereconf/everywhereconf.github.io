@@ -68,3 +68,29 @@ buy-tickets:
     email: Votre Email
     option: Choisir un type de billet
     button: Acheter
+contact:
+  title: Contactez-nous
+  placeholder:
+    name: Nom Complet
+    email: Email
+    subject: Sujet
+    message: Message
+    button: Soumettre
+  validation:
+    name: Veuillez saisir votre nom complet
+    email: Veuillez saisir un email valide
+    subject: Veuiller saisir un sujet
+    message: Veuillez saisir un message
+    chargement: Chargement...
+    sent: Message envoyé. Merci !
+footer:
+  1:
+    title: Information
+    legals: Mentions légales
+    code: Code de conduite
+    association: L'association
+  2:
+    title: Liens utiles
+    flutter-meetup: Paris Flutter
+    meetup-paris-kotlin: Paris Kotlin
+    meetup-nantes-kotlin: Nantes Kotlin
