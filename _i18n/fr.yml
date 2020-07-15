@@ -50,8 +50,8 @@ schedule:
   room: Salle
 newsletter:
   subtitle: S'abonner aux dernières mises à jour
-  placeholder: Entrer votre Email
-  placeholder-name: Entrer votre Nom Complet
+  placeholder: Votre Email
+  placeholder-name: Votre Nom Complet
   button: S'abonner
 buy-tickets:
   title: Billetterie
