@@ -5,6 +5,45 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* This is the project stylesheet */
+
+:root {
+  /* Colors */
+  --black-primary: rgba(3, 7, 18, 1);
+  --black-secondary: rgba(32, 43, 65, 1);
+  --blue-primary: rgba(20, 101, 255, 1);
+  --blue-secondary: rgba(90, 214, 255, 1);
+
+  /* Text colors */
+  --text-white: rgba(225, 235, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  /* Typographies */
+  /* nunito-14-regular */
+  --nunito-14-regular-family: "Nunito";
+  --nunito-14-regular-size: 14px;
+  --nunito-14-regular-weight: 400;
+  --nunito-14-regular-line-height: 19px;
+
+  /* nunito-16-semibold */
+  --nunito-16-semibold-family: "Nunito";
+  --nunito-16-semibold-size: 16px;
+  --nunito-16-semibold-weight: 600;
+  --nunito-16-semibold-line-height: 19px;
+
+  /* sen-32-regular */
+  --sen-32-regular-family: "Sen";
+  --sen-32-regular-size: 32px;
+  --sen-32-regular-weight: 400;
+  --sen-32-regular-line-height: 38px;
+
+  /* sen-64-bold */
+  --sen-64-bold-family: "Sen";
+  --sen-64-bold-size: 64px;
+  --sen-64-bold-weight: 700;
+  --sen-64-bold-line-height: 77px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -607,10 +646,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
-  background-size: cover;
+  background: center / 40% no-repeat url("https://static.overlay-tech.com/assets/7474ab44-9221-4086-b86e-051f50ab784c.png"), var(--black-primary);
   overflow: hidden;
   position: relative;
+}
+
+.background-image {
+  width: 385px;
+  height: 402px;
+  position: absolute;
+  right: 527px;
+  top: 117px;
 }
 
 @media (min-width: 1024px) {
