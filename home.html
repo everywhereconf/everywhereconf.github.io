@@ -55,6 +55,8 @@ canonical_url: 'https://everywhereconf.github.io/home'
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
+                <li class="social-links"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li class="social-links"><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                 {% if site.lang == "fr" %}
                 {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
                 <li class="language-switch"><a href="{{ link1 }}">{% t global.english %}</a></li>
@@ -62,22 +64,18 @@ canonical_url: 'https://everywhereconf.github.io/home'
                 {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
                 <li class="language-switch"><a href="{{ link2 }}">{% t global.french %}</a></li>
                 {% endif %}
-                <li class="menu-active"><a href="index.html">{% t navbar.home %}</a></li>
+<!--                <li class="menu-active"><a href="index.html">{% t navbar.home %}</a></li>-->
+                <li>|</li>
                 <li><a href="#about">{% t navbar.about %}</a></li>
                 <li><a href="#speakers">{% t navbar.speakers %}</a></li>
                 <li><a href="#schedule">{% t navbar.agenda %}</a></li>
                 <li><a href="#supporters">{% t navbar.sponsors %}</a></li>
 <!--                <li><a href="#faq">{% t navbar.faq %}</a></li>-->
                 <li><a href="#contact">{% t navbar.contact %}</a></li>
-                <li class="buy-tickets"><a href="#buy-tickets">{% t navbar.tickets %}</a></li>
+<!--                <li class="buy-tickets"><a href="#buy-tickets">{% t navbar.tickets %}</a></li>-->
                 <li class="call-for-paper"><a href="#call-for-paper">{% t navbar.call-for-paper %}</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
-
-        <div class="social-links top-right">
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
 
     </div>
 </header><!-- End Header -->
@@ -85,15 +83,15 @@ canonical_url: 'https://everywhereconf.github.io/home'
 <!-- ======= Intro Section ======= -->
 <section id="intro">
     <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">WRITE ONCE, RUN EVERYWHERE</h1>
         {% if site.lang == "fr" %}
         {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
-        <h1 class="mb-4 pb-0">La conférence<br><span>multiplateforme</span></h1>
+        <p class="mb-4 pb-0">La conférence multiplateforme</p>
         {% elsif site.lang == "en" %}
         {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-        <h1 class="mb-4 pb-0">The <span>multiplateform</span><br>conference</h1>
+        <p class="mb-4 pb-0">The multiplateform conference</p>
         {% endif %}
 
-        <p class="mb-4 pb-0">{% t intro.date %}</p>
         <!--        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
         <a href="#about" class="about-btn scrollto">{% t intro.about %}</a>
     </div>
@@ -118,7 +116,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     <p>{% t about.when.description %}</p>
                     <div class="about-action">
                         <a href="#subscribe" class="subscribe scrollto">{% t about.when.newsletter %}</a>
-                        <a href="#buy-tickets" class="buy-tickets scrollto">{% t about.when.billet %}</a>
+<!--                        <a href="#buy-tickets" class="buy-tickets scrollto">{% t about.when.billet %}</a>-->
                     </div>
                 </div>
             </div>
@@ -335,7 +333,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
     </section><!-- End Subscribe Section -->
 
     <!-- ======= Buy Ticket Section ======= -->
-    <section id="buy-tickets" class="section-with-bg">
+    <section id="buy-tickets" class="section-with-bg" hidden>
         <div class="container" data-aos="fade-up">
 
             <div class="section-header">
