@@ -719,8 +719,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
+  font-size: var(--sen-64-bold-size);
+  font-weight: var(--sen-64-bold-weight);
   text-transform: uppercase;
 }
 
@@ -736,8 +736,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro p {
   color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: var(--sen-32-regular-size);
+  font-weight: var(--sen-32-regular-weight)
 }
 
 @media (max-width: 991px) {
