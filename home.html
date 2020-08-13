@@ -437,7 +437,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
             </div>
 
             <div class="form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="https://formspree.io/mlepvpqn" method="post" role="form" class="php-email-form">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" name="name" class="form-control" id="name" placeholder="{% t contact.placeholder.name %}" data-rule="minlen:4"
@@ -445,7 +445,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
                             <div class="validate"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="{% t contact.placeholder.email %}" data-rule="email"
+                            <input type="email" class="form-control" name="_replyto" id="email" placeholder="{% t contact.placeholder.email %}" data-rule="email"
                                    data-msg="{% t contact.validation.email %}"/>
                             <div class="validate"></div>
                         </div>
@@ -453,6 +453,7 @@ canonical_url: 'https://everywhereconf.github.io/home'
                     <div class="form-group">
                         <input type="text" class="form-control" name="subject" id="subject" placeholder="{% t contact.placeholder.subject %}" data-rule="minlen:4"
                                data-msg="{% t contact.validation.subject %}"/>
+                        <input type="text" class="form-control" name="_subject" id="_subject" hidden="true" value="Everywhere Event 2020"/>
                         <div class="validate"></div>
                     </div>
                     <div class="form-group">
