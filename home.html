@@ -315,16 +315,16 @@ canonical_url: 'https://everywhereevent.com/home'
                 <p>{% t newsletter.subtitle %}</p>
             </div>
 
-            <form method="POST" action="#">
+            <form method="POST" action="https://labuch.us17.list-manage.com/subscribe/post?u=a4075c7accf6159acd68d18ea&amp;id=6c106d1067" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"> 
                 <div class="row">
                     <div class="col-md-3">
-                        <input type="text" class="form-control" placeholder="{% t newsletter.placeholder-name %}">
+                        <input type="text" class="form-control" name="FNAME" id="mce-FNAME" placeholder="{% t newsletter.placeholder-name %}">
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="{% t newsletter.placeholder %}">
+                        <input type="email" id="mce-EMAIL" name="EMAIL" class="form-control" placeholder="{% t newsletter.placeholder %}">
                     </div>
                     <div class="col-md-3">
-                        <button type="submit">{% t newsletter.button %}</button>
+                        <button name="subscribe" id="mc-embedded-subscribe" type="submit">{% t newsletter.button %}</button>
                     </div>
                 </div>
             </form>
@@ -559,6 +559,9 @@ canonical_url: 'https://everywhereevent.com/home'
 <!-- Template Main JS File -->
 <script src="../assets/js/main.js"></script>
 
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 
 </html>
