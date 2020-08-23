@@ -207,4 +207,17 @@
     aos_init();
   });
 
+  $('#subscribe').on('click', function (event) {
+    $('#subscribe-ok').css('display', 'none');
+    $('#subscribe-error').css('display', 'none');
+
+    let regExp = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (regExp.test($('#mce-EMAIL').val()) && $('#mce-FNAME').val().length > 4) {
+      $('#subscribe-ok').css('display', 'block');
+    } else {
+      $('#subscribe-error').css('display', 'block');
+    }
+  });
+
 })(jQuery);
