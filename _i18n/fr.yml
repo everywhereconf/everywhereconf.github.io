@@ -53,6 +53,9 @@ newsletter:
   placeholder: Votre Email
   placeholder-name: Votre Nom Complet
   button: S'abonner
+  validation:
+    error: Erreur de la demande d'abonnement, vérifiez vos informations.
+    ok: Vous êtes désormais abonné !
 buy-tickets:
   title: Billetterie
   items:

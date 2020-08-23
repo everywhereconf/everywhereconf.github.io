@@ -53,6 +53,9 @@ newsletter:
   placeholder: Enter your Email
   placeholder-name: Enter your Full Name
   button: Subscribe
+  validation:
+    error: An error occured, check your information.
+    ok: You sucessfully subscribed !
 buy-tickets:
   title: Tickets
   items:
