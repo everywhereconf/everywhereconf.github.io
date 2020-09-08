@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Multiplateform Conference
-tagline: Website for Multiplateform Conference
+title: Multiplatform Conference
+tagline: Website for Multiplatform Conference
 email: contacteverywhere2020@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The multiplateform conference is an international event that aims to gather speakers talking about various
+  The multiplatform conference is an international event that aims to gather speakers talking about various
   technologies in any kind of multiplatform programming. This french and english multiplatform conference is online.
 #baseurl: "/home" # the subpath of your site, e.g. /blog
 #url: https://everywhereconf.github.io # the base hostname & protocol for your site, e.g. http://example.com
