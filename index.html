@@ -1,15 +1,581 @@
+---
+permalink: /
+canonical_url: 'https://everywhereevent.com/'
+---
+
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <meta content="multiplateform multiplateforme conference conférence kotlin flutter ionic pwa xamarin desktop web free gratuit application mobile
+    app mobilité mobility development developpement online ligne electron responsive" name="keywords">
+
+    <!-- Favicons -->
+    <link href="https://static.overlay-tech.com/assets/0ec864b3-5e30-44c0-a8fc-6db09f9baf4b.svg" rel="icon">
+    <link href="https://static.overlay-tech.com/assets/0ec864b3-5e30-44c0-a8fc-6db09f9baf4b.svg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: TheEvent - v2.2.0
+    * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+    {% seo title=false %}
+    <title>Everywhere Event | International Multiplatform Conference</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177360928-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177360928-1');
+    </script>
 </head>
+
 <body>
-<script>
-  var lang = navigator.language || navigator.userLanguage;
-  console.log(lang);
-  if (lang.indexOf('en') == 0)
-    window.location = '/en/home/';
-  else
-    window.location = '/home/';
-</script>
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <a href="index.html" class="scrollto">
+                <img src="https://static.overlay-tech.com/assets/a596c13c-33d1-45c0-a6b3-0cfe93d7cc50.svg"
+                    alt="EVERYWHERE EVENT" title="">
+            </a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="social-links"><a href="https://twitter.com/EverywhereEvent" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li class="social-links"><a href="https://www.linkedin.com/company/everywhere-event" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                {% if site.lang == "fr" %}
+                {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+                <li class="language-switch"><a href="{{ link1 }}">{% t global.english %}</a></li>
+                {% elsif site.lang == "en" %}
+                {% capture link2 %}{{ site.baseurl_root }}/fr{{ page.url }}{% endcapture %}
+                <li class="language-switch"><a href="{{ link2 }}">{% t global.french %}</a></li>
+                {% endif %}
+<!--                <li class="menu-active"><a href="index.html">{% t navbar.home %}</a></li>-->
+                <li>|</li>
+                <li><a href="#about">{% t navbar.about %}</a></li>
+                <li><a href="#speakers">{% t navbar.speakers %}</a></li>
+                <li><a href="#schedule">{% t navbar.agenda %}</a></li>
+                <li><a href="#supporters">{% t navbar.sponsors %}</a></li>
+<!--                <li><a href="#faq">{% t navbar.faq %}</a></li>-->
+                <li><a href="#contact">{% t navbar.contact %}</a></li>
+<!--                <li class="buy-tickets"><a href="#buy-tickets">{% t navbar.tickets %}</a></li>-->
+                <li class="call-for-paper"><a href="https://conference-hall.io/public/event/0mJiKSFwmy5RBdVDMkVo">{% t navbar.call-for-paper %}</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Intro Section ======= -->
+<section id="intro">
+    <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1 class="mb-4 pb-0">WRITE ONCE, RUN EVERYWHERE</h1>
+        {% if site.lang == "fr" %}
+        {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
+        <p class="mb-4 pb-0">La conférence multiplateforme</p>
+        {% elsif site.lang == "en" %}
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+        <p class="mb-4 pb-0">The multiplateform conference</p>
+        {% endif %}
+
+        <!--        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
+        <a href="#about" class="about-btn scrollto">{% t intro.about %}</a>
+    </div>
+</section><!-- End Intro Section -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h2>{% t about.what.title %}</h2>
+                    <p>{% t about.what.description %}</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2>{% t about.where.title %}</h2>
+                    <p>{% t about.where.description %}</p>
+                </div>
+                <div class="col-lg-3">
+                    <h2>{% t about.when.title %}</h2>
+                    <p>{% t about.when.description %}</p>
+                    <div class="about-action">
+                        <a href="#subscribe" class="subscribe scrollto">{% t about.when.newsletter %}</a>
+<!--                        <a href="#buy-tickets" class="buy-tickets scrollto">{% t about.when.billet %}</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>{% t speakers.title %}</h2>
+                <p>{% t speakers.subtitle %}</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                        <div class="speaker-action">
+                            <h2>{% t speakers.cfp.title %}</h2>
+                            <p>{% t speakers.cfp.description %}</p>
+                            <a href="https://conference-hall.io/public/event/0mJiKSFwmy5RBdVDMkVo" class="call-for-paper scrollto">{% t speakers.cfp.button %}</a>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="col-lg-4 col-md-6">-->
+<!--                    <div class="speaker" data-aos="fade-up" data-aos-delay="100">-->
+<!--                        <img src="../assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">-->
+<!--                        <div class="details">-->
+<!--                            <h3><a href="/speakers">Brenden Legros</a></h3>-->
+<!--                            <p>Quas alias incidunt</p>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="fa fa-twitter"></i></a>-->
+<!--                                <a href=""><i class="fa fa-facebook"></i></a>-->
+<!--                                <a href=""><i class="fa fa-google-plus"></i></a>-->
+<!--                                <a href=""><i class="fa fa-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+        </div>
+
+    </section><!-- End Speakers Section -->
+
+    <!-- ======= Schedule Section ======= -->
+    <section id="schedule" class="section-with-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>{% t schedule.title %}</h2>
+                <p>{% t schedule.subtitle %}</p>
+            </div>
+
+            <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">{% t schedule.room %} 1</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">{% t schedule.room %} 2</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">{% t schedule.room %} 3</a>-->
+<!--                </li>-->
+            </ul>
+
+
+
+            <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- Schdule Day 1 -->
+                <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+<!--                    <div class="row schedule-item">-->
+<!--                        <div class="col-md-2">-->
+<!--                            <time></time>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10">-->
+<!--                            <p>{% t schedule.description %}</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                </div>
+                <!-- End Schdule Day 1 -->
+
+                <!-- Schdule Day 2 -->
+                <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+<!--                    <div class="row schedule-item">-->
+<!--                        <div class="col-md-2">-->
+<!--                            <time>10:00 AM</time>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10">-->
+<!--                            <div class="speaker">-->
+<!--                                <img src="../assets/img/speakers/1.jpg" alt="Brenden Legros">-->
+<!--                            </div>-->
+<!--                            <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>-->
+<!--                            <p>Facere provident incidunt quos voluptas.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                </div>
+                <!-- End Schdule Day 2 -->
+
+                <!-- Schdule Day 3 -->
+                <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+<!--                    <div class="row schedule-item">-->
+<!--                        <div class="col-md-2">-->
+<!--                            <time>10:00 AM</time>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-10">-->
+<!--                            <div class="speaker">-->
+<!--                                <img src="../assets/img/speakers/2.jpg" alt="Hubert Hirthe">-->
+<!--                            </div>-->
+<!--                            <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>-->
+<!--                            <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+                <!-- End Schdule Day 2 -->
+
+            </div>
+            <div class="schedule-action">
+                <h2>{% t schedule.description %}</h2>
+                <a href="#subscribe" class="subscribe scrollto">{% t schedule.newsletter %}</a>
+            </div>
+
+        </div>
+
+    </section><!-- End Schedule Section -->
+
+    <!-- ======= Supporters Section ======= -->
+    <section id="supporters" class="section-with-bg">
+
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>Sponsors</h2>
+            </div>
+
+            <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                        <img src="../assets/img/supporters/kaibee.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                        <img src="../assets/img/supporters/overlay.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- End Sponsors Section -->
+
+    <!-- =======  F.A.Q Section ======= -->
+<!--    <section id="faq">-->
+
+<!--        <div class="container" data-aos="fade-up">-->
+
+<!--            <div class="section-header">-->
+<!--                <h2>F.A.Q </h2>-->
+<!--            </div>-->
+
+<!--            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">-->
+<!--                <div class="col-lg-9">-->
+<!--                    <ul id="faq-list">-->
+
+<!--                        <li>-->
+<!--                            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a-->
+<!--                                pellentesque? <i class="fa fa-minus-circle"></i></a>-->
+<!--                            <div id="faq2" class="collapse" data-parent="#faq-list">-->
+<!--                                <p>-->
+<!--                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec-->
+<!--                                    ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper-->
+<!--                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+
+<!--    </section>&lt;!&ndash; End  F.A.Q Section &ndash;&gt;-->
+
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+        <div class="container" data-aos="zoom-in">
+            <div class="section-header">
+                <h2>Newsletter</h2>
+                <p>{% t newsletter.subtitle %}</p>
+            </div>
+
+            <form method="POST" action="https://labuch.us17.list-manage.com/subscribe/post?u=a4075c7accf6159acd68d18ea&amp;id=6c106d1067" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"> 
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="FNAME" id="mce-FNAME" placeholder="{% t newsletter.placeholder-name %}">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="mce-EMAIL" name="EMAIL" class="form-control" placeholder="{% t newsletter.placeholder %}">
+                    </div>
+                    <div class="col-md-3">
+                        <button name="subscribe" id="mc-embedded-subscribe" type="submit">{% t newsletter.button %}</button>
+                    </div>
+                    <div class="col-md-8 offset-md-2">
+                        <div id="subscribe-error" class="error">{% t newsletter.validation.error %}</div>
+                        <div id="subscribe-ok" class="subscribed">{% t newsletter.validation.ok %}</div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section><!-- End Subscribe Section -->
+
+    <!-- ======= Buy Ticket Section ======= -->
+    <section id="buy-tickets" class="section-with-bg" hidden>
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>{% t buy-tickets.title %}</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 offset-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Standard</h5>
+                            <h6 class="card-price text-center">0€</h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.1 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.2 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.3 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.4 %}</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>{% t buy-tickets.items.5 %}</li>
+                                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>{% t buy-tickets.items.6 %}</li>
+                            </ul>
+                            <hr>
+                            <div class="text-center">
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal"
+                                        data-ticket-type="standard-access">{% t buy-tickets.button %}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Premium</h5>
+                            <h6 class="card-price text-center">10€</h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.1 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.2 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.3 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.4 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.5 %}</li>
+                                <li><span class="fa-li"><i class="fa fa-check"></i></span>{% t buy-tickets.items.6 %}</li>
+                            </ul>
+                            <hr>
+                            <div class="text-center">
+                                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">
+                                    {% t buy-tickets.button %}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal Order Form -->
+        <div id="buy-ticket-modal" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">{% t buy-tickets.title %}</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="your-name" placeholder="{% t buy-tickets.modal.name %}">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="your-email" placeholder="{% t buy-tickets.modal.email %}">
+                            </div>
+                            <div class="form-group">
+                                <select id="ticket-type" name="ticket-type" class="form-control">
+                                    <option value="">-- {% t buy-tickets.modal.option %} --</option>
+                                    <option value="standard-access">Standard</option>
+                                    <option value="premium-access">Premium</option>
+                                </select>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn">{% t buy-tickets.modal.button %}</button>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </section><!-- End Buy Ticket Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>{% t contact.title %}</h2>
+            </div>
+
+            <div class="form">
+                <form action="https://formspree.io/mlepvpqn" method="post" role="form" class="php-email-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="{% t contact.placeholder.name %}" data-rule="minlen:4"
+                                   data-msg="{% t contact.validation.name %}"/>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" name="_replyto" id="email" placeholder="{% t contact.placeholder.email %}" data-rule="email"
+                                   data-msg="{% t contact.validation.email %}"/>
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="{% t contact.placeholder.subject %}" data-rule="minlen:4"
+                               data-msg="{% t contact.validation.subject %}"/>
+                        <input type="text" class="form-control" name="_subject" id="_subject" hidden="true" value="Everywhere Event 2020"/>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="{% t contact.validation.message %}"
+                                  placeholder="{% t contact.placeholder.message %}"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="loading">{% t contact.validation.chargement %}</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">{% t contact.validation.sent %}</div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit">{% t contact.placeholder.button %}</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+<!--                <div class="col-lg-3 col-md-6 footer-info">-->
+<!--                    >-->
+<!--                    <p></p>-->
+<!--                </div>-->
+
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>{% t footer.1.title %}</h4>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i> <a href="#">{% t footer.1.legals %}</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="#">{% t footer.1.code %}</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="#">{% t footer.1.association %}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>{% t footer.2.title %}</h4>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i> <a href="https://www.meetup.com/fr-FR/Flutter-Paris/">{% t footer.2.flutter-meetup %}</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="https://www.meetup.com/fr-FR/Paris-Progressive-Web-App/">{% t footer.2.meetup-paris-pwa %}</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="https://www.meetup.com/fr-FR/Kotlin-Paris-Meetup/">{% t footer.2.meetup-paris-kotlin %}</a></li>
+                        <li><i class="fa fa-angle-right"></i> <a href="https://www.meetup.com/fr-FR/Kotlin-Nantes-Meetup/">{% t footer.2.meetup-nantes-kotlin %}</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 footer-contact">
+                    <h4>{% t contact.title %}</h4>
+
+                    <p>
+                        {{ site.email }}<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://twitter.com/EverywhereEvent" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/everywhere-event" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                    <br/><br/>
+                    <img src="https://static.overlay-tech.com/assets/a596c13c-33d1-45c0-a6b3-0cfe93d7cc50.svg" alt="EVERYWHERE EVENT"/>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright . All Rights Reserved
+        </div>
+        <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End  Footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/vendor/venobox/venobox.min.js"></script>
+<script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="../assets/vendor/superfish/superfish.min.js"></script>
+<script src="../assets/vendor/hoverIntent/hoverIntent.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../assets/js/main.js"></script>
+
+
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 </html>

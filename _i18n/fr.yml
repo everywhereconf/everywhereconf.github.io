@@ -19,8 +19,8 @@ about:
   what:
     title: Quoi ?
     description: >-
-      La conférence <b>Multiplateforme</b> est totalement dédiée aux solutions multiplateformes qui existent actuellement comme Flutter, React Native
-      ou encore Kotlin Multiplateforme.<br/><br/>
+      La conférence <b>Multiplateforme</b> est totalement dédiée aux solutions multiplateformes qui existent actuellement comme Flutter, React Native,
+      Ionic ou encore Kotlin Multiplateforme.<br/><br/>
       Notre objectif est de vous apporter toutes les réponses aux questions que vous vous posez sur le multiplateforme.<br/><br/>
       Vous ne savez pas si vous devez vous y mettre, comment vous y mettre ou bien vous souhaitez venir profiter
       de conseils d'experts, cette conférence est faite pour vous.
@@ -31,7 +31,7 @@ about:
       Si vous souhaitez échanger ou networker, un bar sera réservé afin de profiter de la soirée
       à Nantes et à Paris. Une contribution vous sera demandée au moment de prendre vos billets
   when:
-    billet: Je prends mon billet
+    billet: Je prends mon billet gratuit
     newsletter: Je m'abonne
     title: Quand ?
     description: Le 27 Novembre 2020
@@ -97,3 +97,4 @@ footer:
     flutter-meetup: Paris Flutter
     meetup-paris-kotlin: Paris Kotlin
     meetup-nantes-kotlin: Nantes Kotlin
+    meetup-paris-pwa: Paris PWA

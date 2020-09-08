@@ -39,11 +39,23 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-last-modified-at
 
-languages: ["fr", "en"]
+defaults:
+  -
+    scope:
+      path: "assets/vendor/**"
+    values:
+      sitemap: false
+
+keep_files: ['CNAME', '.git']
+
+languages: ["en","fr"]
 #exclude_from_localizations: ["assets"]
 #default_locale_in_subfolder: true
-defaultLang: fr
+url: "https://everywhereevent.com" # the base hostname & protocol for your site
+defaultLang: en
 languageNames:
   fr: French
   en: English

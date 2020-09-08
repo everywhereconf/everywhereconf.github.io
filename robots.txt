@@ -1,0 +1,5 @@
+---
+    permalink: /robots.txt
+---
+User-agent: *
+Sitemap: https://everywhereevent.com/sitemap_index.xml
